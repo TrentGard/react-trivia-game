@@ -1,0 +1,61 @@
+[
+  {
+    "question": "Prior to being the Indianapolis Colts, what city did the Colts call home?",
+
+    "answers": [
+      "Philadelphia, PA",
+      "Cincinnati, OH",
+      "Baltimore, MD",
+      "Los Angeles, CA",
+      "St. Louis, MO"
+    ],
+
+    "correctAnswer": "Baltimore, MD"
+  },
+  {
+    "question": "How many touchdowns did the Colts score in the 2006 regular season?",
+
+    "answers": ["30", "35", "40", "45", "50"],
+
+    "correctAnswer": "50"
+  },
+  {
+    "question": "What former Colt head coach was also a former Colts player?",
+
+    "answers": [
+      "Tony Dungy",
+      "Don Shula",
+      "Frank Reich",
+      "Jim Mora",
+      "Weeb Ewbank"
+    ],
+
+    "correctAnswer": "Don Shula"
+  },
+  {
+    "question": "Which of these combinations of receivers had the most touchdowns in a single season?",
+
+    "answers": [
+      "Marvin Harrison and Reggie Wayne",
+      "T.Y. Hilton and Reggie Wayne",
+      "Marvin Harrison and Dallas Clark",
+      "Marvin Harrison and Bryan Fletcher",
+      "T.Y. Hilton and Eric Ebron"
+    ],
+
+    "correctAnswer": "Marvin Harrison and Bryan Fletcher"
+  },
+  {
+    "question": "Which of these great running backs once totaled an incredible 2,303 yards from scrimmage for the Colts in a single season?",
+
+    "answers": [
+      "Edgerrin James",
+      "Eric Dickerson",
+      "Joseph Addai",
+      "Marshall Faulk",
+      "Lydell Mitchell"
+    ],
+
+    "correctAnswer": "Edgerrin James"
+  }
+]
