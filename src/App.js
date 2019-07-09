@@ -23,7 +23,7 @@ class App extends Component {
 
   startTimer() {
     if (this.timer) clearInterval(this.timer);
-    this.setState({ time: 5 }, () => {
+    this.setState({ time: 15 }, () => {
       this.timer = setInterval(() => {
         this.setState(state => {
           const newTime = state.time - 1;
@@ -64,7 +64,7 @@ class App extends Component {
         });
         this.startTimer();
       } else this.gameFinished();
-    }, 3000);
+    }, 5000);
   }
 
   nextQuestion = e => {
@@ -77,7 +77,7 @@ class App extends Component {
           titleText: "Incorrect!",
           userAnswer: answer
         },
-        () => this.startAnswerTimer()
+        this.startAnswerTimer()
       );
     } else {
       this.setState(
@@ -87,7 +87,7 @@ class App extends Component {
           titleText: "Correct!",
           userAnswer: answer
         },
-        () => this.startAnswerTimer()
+        this.startAnswerTimer()
       );
     }
   };
@@ -100,7 +100,7 @@ class App extends Component {
         titleText: "Out Of Time!",
         userAnswer: "AFK!"
       },
-      () => this.startAnswerTimer()
+      this.startAnswerTimer()
     );
   }
 
