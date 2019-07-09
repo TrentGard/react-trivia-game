@@ -1,5 +1,12 @@
 .App {
+  margin-top: 25%;
   text-align: center;
+  background: cover;
+  color: white;
+}
+
+body {
+  background-image: url("/coltsTrivia.jpg");
 }
 
 .App-logo {

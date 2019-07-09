@@ -26,7 +26,7 @@ class App extends Component {
     this.setState({ time: 15, userAnswer: "" }, () => {
       this.timer = setInterval(() => {
         this.setState(state => {
-          const newTime = state.time - 1;
+          let newTime = state.time - 1;
           if (newTime === 0) {
             this.outOfTime();
           }
@@ -68,8 +68,12 @@ class App extends Component {
   }
 
   outOfTime() {
+    if (this.timeout) {
+      clearTimeout(this.timeout);
+    }
     this.setState(
       {
+        time: 15,
         incorrect: this.state.incorrect + 1,
         showAnswer: true,
         titleText: "Incorrect!",
@@ -84,6 +88,7 @@ class App extends Component {
     if (answer !== questions[this.state.currentQuestion].correctAnswer) {
       this.setState(
         {
+          time: 15,
           incorrect: this.state.incorrect + 1,
           showAnswer: true,
           titleText: "Incorrect!",
@@ -94,6 +99,7 @@ class App extends Component {
     } else {
       this.setState(
         {
+          time: 15,
           correct: this.state.correct + 1,
           showAnswer: true,
           titleText: "Correct!",
@@ -119,7 +125,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className="App">
         <Title text={this.state.titleText} />
         {!this.state.gameStarted && !this.state.gameFinished ? (
           <Button
