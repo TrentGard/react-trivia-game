@@ -15,7 +15,7 @@ function Question(props) {
             key={answer}
             text={answer}
             id={answer}
-            className="answerButton"
+            className="answer"
           />
         );
       })}

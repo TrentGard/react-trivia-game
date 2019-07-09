@@ -130,7 +130,7 @@ class App extends Component {
         {!this.state.gameStarted && !this.state.gameFinished ? (
           <Button
             text="Start"
-            className="startButton"
+            className="answer start-button"
             onClick={this.gameStart}
           />
         ) : (

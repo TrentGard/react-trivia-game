@@ -8,7 +8,11 @@ function Results(props) {
       <Title />
       <h3>Correct Answers: {props.correct}</h3>
       <h3>Incorrect Answers: {props.incorrect}</h3>
-      <Button text="Play Again?" onClick={props.restartGame} />
+      <Button
+        className="answer"
+        text="Play Again?"
+        onClick={props.restartGame}
+      />
     </div>
   );
 }
