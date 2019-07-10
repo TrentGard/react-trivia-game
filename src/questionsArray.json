@@ -36,11 +36,11 @@
     "question": "Which of these combinations of receivers had the most touchdowns in a single season?",
 
     "answers": [
-      "Marvin Harrison and Reggie Wayne",
-      "T.Y. Hilton and Reggie Wayne",
-      "Marvin Harrison and Dallas Clark",
+      "Reggie Wayne and Dallas Clark",
+      "Marvin Harrison and Ben Utecht",
+      "Dallas Clark and Ben Utecht",
       "Marvin Harrison and Bryan Fletcher",
-      "T.Y. Hilton and Eric Ebron"
+      "Reggie Wayne and Eric Ebron"
     ],
 
     "correctAnswer": "Marvin Harrison and Bryan Fletcher"
