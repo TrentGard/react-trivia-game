@@ -17,6 +17,7 @@ body {
   padding: 14px 40px;
   margin: 5px;
   box-shadow: 4px 4px 8px #282c34;
+  background-color: white;
 }
 
 .start-button {
