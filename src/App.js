@@ -76,7 +76,7 @@ class App extends Component {
         time: 15,
         incorrect: this.state.incorrect + 1,
         showAnswer: true,
-        titleText: "Incorrect!",
+        titleText: "Out Of Time!",
         userAnswer: "AFK!"
       },
       this.startAnswerTimer()
