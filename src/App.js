@@ -25,14 +25,18 @@ class App extends Component {
     if (this.timer) clearInterval(this.timer);
     this.setState({ time: 15, userAnswer: "" }, () => {
       this.timer = setInterval(() => {
-        this.setState(state => {
-          let newTime = state.time - 1;
-          if (newTime === 0) {
-            this.outOfTime();
-          }
-          return { time: state.time - 1 };
-        });
+        this.newTime();
       }, 1000);
+    });
+  }
+
+  newTime() {
+    let newTime = this.state.time - 1;
+    if (newTime === 0) {
+      this.outOfTime();
+    }
+    this.setState(state => {
+      return { time: state.time - 1 };
     });
   }
 
@@ -68,9 +72,7 @@ class App extends Component {
   }
 
   outOfTime() {
-    if (this.timeout) {
-      clearTimeout(this.timeout);
-    }
+    if (this.timeout) clearTimeout(this.timeout);
     this.setState(
       {
         time: 15,
